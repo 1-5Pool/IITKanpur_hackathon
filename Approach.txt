@@ -1,0 +1,15 @@
+Our approach was simple, and it can be summarized in three steps : Data exploration, Feature selection, and model prediction
+
+Data exploration : Since this is a almost a unsupervised machine learning problem(partial labels), we knew optimal feature selection would be the best way to go.
+
+After exploring around with many possible features using the wireshark and tcpdump tool, we found the best features to feed to our model. 
+We decided on mean packet bandwith, quantity of distinct payloads, and presence of the SNMP protocol as the best performing features among many others.
+Data exploration can be found in DataExploration.ipynb
+
+Now, the best unsupervised algorithm for our usecase was Isolation Forest. An important point to note is that anomalies will still be unbalanced, because of the aggregations we performed.
+This class imbalance (which is present at the traffic flow level) is an inherent property of the DDos attack, which we can leverage by using a robust anomaly detection algorithm like Isolation forests.
+The feature extraction, aggregation, and training of the classifer can be seen in DataFeatureExtraction.ipynb
+
+And finally, testing code which loads the trained model is found in ddosdetect.py, which will generate a file called results.csv.
+
+Libraries used can be viewed in requirements.txt, which is a conda environment export file.

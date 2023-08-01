@@ -1,5 +1,4 @@
-There were 3 rounds to this hackathon. Round one was the qualifying round, in which there was 30 MCQ on cyberSec and 2 questions on implimentation of Machine learning algorithms, 12000 people participated from all around the globe in this round.
-We were able to create a working solution for classifying a file as malware/benign from the static and dynamic analysis using ML libraries. In the final round of the hackathon, we created a Machine Learning code to sort Network Traffic as DDOS/Normal.
+There were three rounds in this hackathon. Round one was the qualifying stage, which consisted of 30 multiple-choice questions on cybersecurity and two questions focused on the implementation of machine learning algorithms. A total of 12,000 people from around the world participated in this round. Our team was able to create a functional solution to classify files as either malware or benign, utilizing static and dynamic analysis through machine learning libraries. In the Second round of the hackathon, we developed machine learning code to differentiate network traffic as either DDoS (Distributed Denial of Service) or normal. The final round was a presentation round where we had to show how we can implement the 2nd round solution.
 
 We got the award for the Most Promising Startup. 
 Award ceremony link :  https://youtu.be/ezLZxXU4qhc
